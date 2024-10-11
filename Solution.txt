@@ -1,5 +1,0 @@
-There are many correct integer solutions with a + b + c < 50, but this is the one that I submitted:
-a=7, b=9, c=4
-a1, c2, e3, d1, f2, e4, f6
-a6, c5, d3, b4, d5, e3, f1
-
