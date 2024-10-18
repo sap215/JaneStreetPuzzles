@@ -6,7 +6,7 @@
 
 #define BOARD_SIZE 6
 #define TARGET_SCORE 2024
-#define MAX_PATHS 1000000
+#define MAX_PATHS 10000000
 #define MAX_PATH_LENGTH (BOARD_SIZE * BOARD_SIZE)
 
 // Define the specific structure of the board with A, B, and C
