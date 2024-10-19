@@ -35,7 +35,7 @@ typedef struct {
     int path[MAX_PATH_LENGTH][2];
     int path_length;
     int score;
-    int a, b, c; // Values of a, b, c for this path
+    int a, b, c;
 } SuccessfulPath;
 
 SuccessfulPath successful_paths[MAX_PATHS];
@@ -144,9 +144,11 @@ void bfs_knight_paths(int start_x, int start_y, int end_x, int end_y, int game_b
 
                 // Update the score based on the move
                 if (game_board[row][col] == new_value) {
-                    next.score += new_value;  // Same value, increment by the value
+                    // Same value, increment by the value
+                    next.score += new_value;
                 } else {
-                    next.score *= new_value;  // Different value, multiply by the new value
+                    // Different value, multiply by the new value
+                    next.score *= new_value; 
                 }
 
                 enqueue(queue, next);
@@ -263,9 +265,11 @@ void check_additional_paths() {
 
                     // Update the score based on the move
                     if (game_board[row][col] == new_value) {
-                        next.score += new_value;  // Same value, increment by the value
+                        // Same value, increment by the value
+                        next.score += new_value;
                     } else {
-                        next.score *= new_value;  // Different value, multiply by the new value
+                        // Different value, multiply by the new value
+                        next.score *= new_value;
                     }
 
                     enqueue(queue, next);
